@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GENTLE MONSTER Official Site</title>
+        <!-- og -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://phs-developer.github.io/gentlemonster/" />
+        <meta property="og:title" content="GENTLE MONSTER 공식 홈페이지 (포폴용)" />
+        <meta property="og:image" content="https://phs-developer.github.io/gentlemonster/assets/images/og_img.png" />
+        <meta
+            property="og:description"
+            content="젠틀몬스터 공식 온라인 스토어에서 다양한 스타일의 선글라스, 안경 및 최신 협업 컬렉션을 만나보세요."
+        />
+        <meta property="og:site_name" content="GENTLE MONSTER Official Site" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#68acff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- script -->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/main.js" defer></script>
+    </head>
+    <body class="">
+        <header id="header" class="nav">
+            <div class="inner">
+                <h1 class="logo-area">
+                    <a href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="239"
+                            height="22"
+                            viewBox="0 0 239 23"
+                            fill="none"
+                        >
+                            <g clip-path="url(#clip0_591_193)">
+                                <path
+                                    d="M0 11.5734C0 4.67921 4.08753 1.13371 10.7516 0.591675C13.2984 0.706764 15.4146 1.19311 16.6434 1.76484L16.8142 5.08388H16.3835C14.3231 3.11251 12.4668 2.65215 10.5511 2.65215C6.83483 2.65215 4.17292 5.39573 4.17292 10.6601C4.17292 15.9246 6.69004 19.2956 11.1488 19.2956H13.4098V12.1749L9.94967 12.4607V10.4597H17.6421V10.8309C17.1001 11.889 16.8996 12.29 16.8996 13.0325V20.2089C16.2128 20.4947 13.7253 21.2669 10.0648 21.2669C4.37711 21.2669 0 17.3502 0 11.5734Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M21.8189 18.6348V3.30935C21.8189 2.73762 21.6185 2.39606 20.9316 1.33427V0.963013H32.7153V3.24995H32.3441C31.286 2.81929 30.7699 2.62253 30.1128 2.62253H25.4795V9.85831L30.8256 9.54275V11.6886L25.4795 11.4027V19.381L29.7675 19.24C31.3417 19.1843 32.1399 18.9541 33.0569 18.3527L33.4578 18.5234L32.8007 20.9812H20.9316V20.6099C21.6185 19.5518 21.8189 19.2103 21.8189 18.6385V18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M36.773 18.6348V3.02349C36.773 2.50744 36.5726 2.19558 35.8857 1.33798V0.966725H39.3755L49.6705 15.1227H49.8413V3.30935C49.8413 2.73762 49.7002 2.39606 49.0691 1.33427V0.963013H52.7296V1.33427C52.0725 2.39235 51.9871 2.73391 51.9871 3.30935V20.9812H49.2992C49.0988 20.5505 48.8686 20.1533 48.5567 19.7226L39.0897 6.82515H38.9189V18.6348C38.9189 19.2065 39.06 19.5481 39.6911 20.6062V20.9774H36.0008V20.6062C36.6283 19.5481 36.773 19.2065 36.773 18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M60.7373 18.6348V2.62253H57.4183C56.7612 2.62253 56.1895 2.9381 55.4469 3.27965H55.0757V0.963013H70.0039V3.27965H69.6326C68.8901 2.9381 68.3184 2.62253 67.6576 2.62253H64.3385V18.6385C64.3385 19.2103 64.539 19.5518 65.2258 20.6099V20.9812H59.85V20.6099C60.5369 19.5518 60.7373 19.2103 60.7373 18.6385V18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M73.4049 18.6348V3.30935C73.4049 2.73762 73.2044 2.39606 72.5176 1.33427V0.963013H77.9491V1.33427C77.2622 2.39235 77.0618 2.73391 77.0618 3.30935V19.381L81.179 19.24C82.8942 19.1843 83.6367 18.9541 84.498 18.3527L84.899 18.5234L84.2419 20.9812H72.5176V20.6099C73.2044 19.5518 73.4049 19.2103 73.4049 18.6385V18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M88.1026 18.6348V3.30935C88.1026 2.73762 87.9022 2.39606 87.2153 1.33427V0.963013H98.999V3.24995H98.6278C97.5697 2.81929 97.0536 2.62253 96.3965 2.62253H91.7632V9.85831L97.1093 9.54275V11.6886L91.7632 11.4027V19.381L96.0512 19.24C97.6254 19.1843 98.4236 18.9541 99.3406 18.3527L99.7415 18.5234L99.0844 20.9812H87.2153V20.6099C87.9022 19.5518 88.1026 19.2103 88.1026 18.6385V18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M110.263 18.6348V3.30935C110.263 2.73762 110.063 2.39606 109.376 1.33427V0.963013H113.523L119.927 16.2922H120.098L126.792 0.963013H130.968V1.33427C130.281 2.39235 130.081 2.73391 130.081 3.30935V18.6385C130.081 19.2103 130.281 19.5518 130.968 20.6099V20.9812H125.648V20.6099C126.335 19.5518 126.535 19.2103 126.535 18.6385V7.05533H126.365L120.217 20.9812H118.617L112.584 7.05533H112.413V18.6385C112.413 19.2103 112.554 19.5518 113.185 20.6099V20.9812H109.495V20.6099C110.122 19.5518 110.267 19.2103 110.267 18.6385L110.263 18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M140.777 21.3226C136.429 19.923 133.998 15.9468 133.998 11.2578C133.998 4.76457 138.144 0.476562 144.979 0.476562C145.952 0.476562 146.925 0.532251 147.897 0.677041C151.729 1.82051 154.561 5.79667 154.561 10.4856C154.561 17.1794 150.671 21.5231 143.724 21.5231C142.752 21.5231 141.664 21.4674 140.78 21.3226H140.777ZM144.979 19.6631C148.981 19.6631 150.47 16.2327 150.47 12.2008C150.47 7.11091 148.469 2.30686 143.58 2.30686C139.262 2.30686 138.089 6.25331 138.089 10.5153C138.089 15.4345 140.461 19.6668 144.979 19.6668V19.6631Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M158.389 18.6348V3.02349C158.389 2.50744 158.189 2.19558 157.502 1.33798V0.966725H160.992L171.287 15.1227H171.457V3.30935C171.457 2.73762 171.316 2.39606 170.685 1.33427V0.963013H174.346V1.33427C173.689 2.39235 173.603 2.73391 173.603 3.30935V20.9812H170.915C170.715 20.5505 170.485 20.1533 170.173 19.7226L160.706 6.82515H160.535V18.6348C160.535 19.2065 160.676 19.5481 161.307 20.6062V20.9774H157.617V20.6062C158.244 19.5481 158.389 19.2065 158.389 18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M177.776 20.5802L177.349 16.9493H177.835C179.009 18.438 180.694 19.5815 182.524 19.5815C184.355 19.5815 185.699 18.4083 185.699 16.6374C185.699 15.4086 184.811 14.1797 181.838 12.1489C179.15 10.3186 177.49 8.74451 177.49 6.142C177.49 2.51112 180.323 0.651123 184.21 0.651123C185.353 0.651123 187.44 0.992679 188.242 1.30825L188.442 4.28201H187.986C187.358 3.36872 186.011 2.48142 183.954 2.48142C182.068 2.48142 180.809 3.5098 180.809 5.02824C180.809 6.54667 182.008 7.80152 184.526 9.60211C188.015 12.0895 189.099 13.4929 189.099 15.8949C189.099 19.756 185.754 21.3004 182.209 21.3004C180.895 21.3004 178.979 20.9848 177.776 20.5839V20.5802Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M196.565 18.6348V2.62253H193.25C192.593 2.62253 192.021 2.9381 191.278 3.27965H190.907V0.963013H205.835V3.27965H205.464C204.722 2.9381 204.15 2.62253 203.493 2.62253H200.174V18.6385C200.174 19.2103 200.374 19.5518 201.061 20.6099V20.9812H195.685V20.6099C196.372 19.5518 196.573 19.2103 196.573 18.6385L196.565 18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M209.233 18.6348V3.30935C209.233 2.73762 209.032 2.39606 208.345 1.33427V0.963013H220.129V3.24995H219.758C218.7 2.81929 218.184 2.62253 217.526 2.62253H212.893V9.85831L218.239 9.54275V11.6886L212.893 11.4027V19.381L217.181 19.24C218.755 19.1843 219.553 18.9541 220.47 18.3527L220.871 18.5234L220.214 20.9812H208.345V20.6099C209.032 19.5518 209.233 19.2103 209.233 18.6385V18.6348Z"
+                                    fill="black"
+                                ></path>
+                                <path
+                                    d="M239 20.6099V20.9812H234.511C234.452 20.6396 234.196 20.0382 233.94 19.5518L229.793 12.0896L227.821 12.0339V18.6385C227.821 19.2103 228.022 19.5518 228.709 20.6099V20.9812H223.389V20.6099C224.075 19.5518 224.276 19.2103 224.276 18.6385V3.30935C224.276 2.73762 224.075 2.39606 223.389 1.33427V0.963013H231.282C234.17 0.963013 237.114 3.22396 237.114 6.68407C237.114 9.0861 235.826 10.5154 233.483 11.9188L237.571 19.1546C237.886 19.7263 238.399 20.2683 239 20.6136V20.6099ZM229.878 10.456C231.794 10.4003 233.509 9.16778 233.509 6.62467C233.509 4.08157 232.05 2.70792 229.819 2.64852L227.818 2.59283V10.5154L229.878 10.4597V10.456Z"
+                                    fill="black"
+                                ></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_591_193">
+                                    <rect width="239" height="23" fill="white" transform="translate(0 0.476685)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="blind">젠틀 몬스터</span>
+                    </a>
+                </h1>
+                <nav class="nav-area">
+                    <ul class="gnb-list">
+                        <li class="gnb-item">
+                            <a href="#">선글라스</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">안경</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">콜라보레이션</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">스타일</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">브랜드이슈</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">매장보기</a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">수리서비스</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tool-area">
+                    <ul class="tool-list">
+                        <li class="tool-item">
+                            <select name="cad">
+                                <option value="c" selected>CAD $</option>
+                                <option value="u">USD $</option>
+                            </select>
+                        </li>
+                        <li class="tool-item">
+                            <a href="#">FR</a>
+                        </li>
+                        <li class="tool-item ico">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 19" fill="none">
+                                    <path
+                                        d="M14.4016 6.60156H0.601562V18.4016H14.4016V6.60156Z"
+                                        stroke="black"
+                                        stroke-width="1.2"
+                                    ></path>
+                                    <path
+                                        d="M4.21327 6.27359C4.21327 6.27359 3.43412 1.30859 7.63612 1.30859C11.8381 1.30859 11.0573 6.27359 11.0573 6.27359"
+                                        stroke="black"
+                                        stroke-width="1.2"
+                                    ></path>
+                                </svg>
+                                <span class="blind">장바구니</span>
+                                <span class="cart">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sc-home">
+                <div class="group-bg">
+                    <img src="./assets/images/main_back_1.jpg" alt />
+                    <img src="./assets/images/main_back_2.jpg" alt />
+                    <img src="./assets/images/main_back_3.avif" alt />
+                </div>
+                <div class="group-contents">
+                    <h2 class="title">
+                        the ideal<br />
+                        dose
+                        <ul class="word-list">
+                            <li class="word-item">of GENTLE JELLY</li>
+                            <li class="word-item">of BOLD</li>
+                            <li class="word-item">of MAISON</li>
+                        </ul>
+                    </h2>
+                    <a href="#" class="link-story">스토리 보기</a>
+                </div>
+            </section>
+            <section class="sc-products">
+                <div class="sticky1-wrapper">
+                    <div class="sticky-cont">
+                        <h2 class="group-title">
+                            SHOW THE 2024 COLLECTION<br />
+                            <span class="point">'GENTLE JELLY'</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="sticky2-wrapper">
+                    <div class="sticky-cont">
+                        <div class="group-prod">
+                            <ul class="prod-list">
+                                <li class="prod-item">
+                                    <a href="#">
+                                        <div class="img-area">
+                                            <img src="./assets/images/prod_1.avif" alt />
+                                        </div>
+                                        <div class="title-area">
+                                            <p class="title">SUGAR BUFF IV2</p>
+                                            <p class="desc">
+                                                구조적인 미학을 담은 버터플라이 실루엣에 세련된 그린 컬러가 특징이며,
+                                                템플에 결합된 메탈 아이콘 디테일이 돋보이는 아이템입니다.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="btn-area"><span>구매하기</span></button>
+                                    </a>
+                                </li>
+                                <li class="prod-item">
+                                    <a href="#">
+                                        <div class="img-area">
+                                            <img src="./assets/images/prod_2.avif" alt />
+                                        </div>
+                                        <div class="title-area">
+                                            <p class="title">DADA RC6</p>
+                                            <p class="desc">
+                                                부드러운 아이보리 컬러에 핑크 컬러 렌즈와 볼륨감 있는 메탈 로고, 젤리의
+                                                촉감이 표현된 다자인 장식을 더했습니다.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="btn-area"><span>구매하기</span></button>
+                                    </a>
+                                </li>
+                                <li class="prod-item">
+                                    <a href="#">
+                                        <div class="img-area">
+                                            <img src="./assets/images/prod_3.avif" alt />
+                                        </div>
+                                        <div class="title-area">
+                                            <p class="title">JUICY GR7</p>
+                                            <div class="desc">
+                                                현대적인 터치를 담은 스퀘어 실루엣에 차분한 그레이 컬러가 특징이며,
+                                                템플에 결합된 메탈 아이콘 디테일이 돋보이는 아이템입니다.
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-area"><span>구매하기</span></button>
+                                    </a>
+                                </li>
+                                <li class="prod-item">
+                                    <a href="#">
+                                        <div class="img-area">
+                                            <img src="./assets/images/prod_5.avif" alt />
+                                        </div>
+                                        <div class="title-area">
+                                            <p class="title">JUICY GR7</p>
+                                            <div class="desc">
+                                                볼륨감이 느껴지는 감각적인 라운드 실루엣에 심플한 블랙 컬러를 더하여
+                                                현대적인 감각을 담아냈습니다.
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-area"><span>구매하기</span></button>
+                                    </a>
+                                </li>
+                                <li class="prod-item more">
+                                    <a href="#">
+                                        <div class="title-area">
+                                            <p class="title">see more products</p>
+                                        </div>
+                                        <button type="button" class="btn-area"><span>컬렉션 더보기</span></button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-desc">
+                            <p class="desc-wrap">
+                                <span class="desc">Energy infusions</span>
+                                <span class="desc">60 mg of caffeine</span>
+                                <span class="desc">Awakens the mind</span>
+                                <span class="desc">No crash</span>
+                            </p>
+                            <p class="desc-wrap">
+                                <span class="desc">Energy infusions</span>
+                                <span class="desc">60 mg of caffeine</span>
+                                <span class="desc">Awakens the mind</span>
+                                <span class="desc">No crash</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-collection">
+                <div class="content1">
+                    <div class="group-title">
+                        <h2 class="title">
+                            <div class="left"><span>2024 BRAND</span></div>
+                            <div class="right"><span>COLLECTION</span></div>
+                        </h2>
+                    </div>
+                    <div class="group-coll">
+                        <ul class="coll-list">
+                            <li class="coll-item">
+                                <svg>
+                                    <path
+                                        d="M17.6 20.7V8.5M17.6 41.5V29.3M10 17.3l-1.6-1.6M11.9 24.5H3.6M10 31.7l-1.6 1.5M25.2 17.3l1.5-1.6M23.2 24.5h8.3M25.2 31.7l1.5 1.5M40.7 13.1V9M40.7 22.5v-4.2M37.5 15.5h-2.6M43.8 15.5h2.6"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                </svg>
+                                <h3 class="title">HAUS DOSAN</h3>
+                                <p class="text">
+                                    7월 18일 글로벌 출시되는 젠틀몬스터와 뮈글러의 협업 컬렉션을 기념하여 서울과
+                                    상해에서 특별한 팝업이 진행됩니다. 뮈글러와 젠틀몬스터의 대담함과 역동성을 표현한
+                                    키네틱 오브제의 움직임을 통해 두 브랜드의 강력한 아이덴티티를 표현한 팝업을
+                                    만나보세요.
+                                </p>
+                            </li>
+                            <li class="coll-item">
+                                <svg>
+                                    <path
+                                        d="M29.3 16.6c2.6-2.3 6.4-3.4 9.8-2.5 4.1 1 7.5 4.7 8.1 8.9.6 4.2-1.5 8.7-5.1 10.9-3.4 2.1-8 1.9-11.3-.2-4.3-2.8-5.2-7.9-7-12.2-1.8-4.3-5.5-7.6-10.3-7.6-6 0-10.8 4.8-10.8 10.8s4.8 10.8 10.8 10.8c2.5 0 4.7-.8 6.6-2.2"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                    <path
+                                        d="m20.7 36.3.6-4.6h-4.6"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                </svg>
+                                <h3 class="title">JENTLE SALON</h3>
+                                <p class="text">
+                                    젠틀몬스터와 제니가 함께 상상한 세번째 판타지 세계 ‘젠틀 살롱 (JENTLE SALON)’을
+                                    소개합니다. 팝업에 방문하여 젠틀몬스터와 제니가 함께 구상한 젠틀 살롱 컬렉션
+                                    아이웨어 8종과 이를 다채롭게 연출할 수 있는 참(charm) 11종을 만나보세요.
+                                </p>
+                            </li>
+                            <li class="coll-item">
+                                <svg>
+                                    <path
+                                        d="M31.5 25.7c2.2-1.1 4.7-1.6 7.3-1.4.6-3.3.3-6.7-.8-9.7-2.8.4-5.5 1.6-7.9 3.4 1.1 2.4 1.6 5 1.4 7.7zM18.4 25.7c-.2-2.6.4-5.3 1.4-7.7-2.3-1.7-5.1-2.9-7.9-3.4-1.2 3-1.4 6.4-.8 9.7 2.6-.2 5.1.2 7.3 1.4z"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                    <path
+                                        d="M38.8 24.3c-2.5-.2-5.1.3-7.3 1.4M18.4 25.7c-2.2-1.1-4.7-1.6-7.3-1.4"
+                                        style="
+                                            fill: none;
+                                            stroke: #000;
+                                            stroke-width: 2;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-miterlimit: 10;
+                                        "
+                                    ></path>
+                                    <path
+                                        d="M38.8 24.3c-2.5-.2-5.1.3-7.3 1.4-.2 4.2-2.2 8.3-6.5 11.3 0 0 0 0 0 0 10.4 5.7 18.8-2.4 19.6-11.3-1.8-.8-3.8-1.3-5.8-1.4zM18.4 25.7c-2.2-1.1-4.7-1.6-7.3-1.4-2 .1-4 .6-5.8 1.4.8 8.9 9.2 17 19.6 11.3 0 0 0 0 0 0-4.3-3-6.2-7.1-6.5-11.3z"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                    <path
+                                        d="M25 11.1C17.7 17 14.9 30 25 37c10.1-7 7.3-20 0-25.9z"
+                                        style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                                        vector-effect="non-scaling-stroke"
+                                    ></path>
+                                </svg>
+                                <h3 class="title">GENTLE HIGH SCHOOL</h3>
+                                <p class="text">
+                                    젠틀 고등학교를 주제로 표현된 정교하고 과감한 메탈 심볼 디테일이 돋보이는 2024
+                                    옵티컬 컬렉션을 만나보세요. 2024 옵티컬 컬렉션 런칭을 기념하여 서울과 베이징에서
+                                    특별한 팝업 스토어를 선보입니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="sticky-wrapper">
+                        <div class="contents">
+                            <div class="title">
+                                <img src="./assets/images/mugler_logo.webp" alt="mugler gentle monster" />
+                            </div>
+                            <div class="down">Scroll down to explore</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-video">
+                    <div class="inner">
+                        <video
+                            playsinline
+                            muted
+                            loop
+                            autoplay
+                            src="./assets/images/collabo.mp4"
+                            poster="./assets/images/campaign_pc_3.jpg"
+                        ></video>
+                        <div class="clip left"></div>
+                        <div class="clip right"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-collabo">
+                <h2 class="blind">뮈글러 콜라보레이션</h2>
+                <div class="content1">
+                    <p class="text">
+                        MUGLER x GENTLE MONSTER 컬렉션을 공개합니다.<br />
+                        뮈글러의 1997년 Les Insectes 컬렉션에서 영감을 받은 협업 컬렉션은<br />
+                        뮈글러의 시그니처 스파이럴 디테일에 젠틀몬스터의 미래지향적인 감각이 더해졌습니다.
+                    </p>
+                    <div class="inner">
+                        <div class="group-video">
+                            <video
+                                loop
+                                autoplay
+                                muted
+                                playsline
+                                src="./assets/images/PC_SPIRAL_01_Video_1080x1350.mp4"
+                                poster="./assets/images/PC_SPIRAL_02_Video_1080x1350_cover.jpg"
+                            ></video>
+                        </div>
+                        <div class="group-contents">
+                            <img src="./assets/images/spiral_1.avif" alt class="spiral" />
+                            <p class="text">스파이럴 01로의 변형(變形)</p>
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <span>Case No.</span>
+                                    <p>DEFORMATION TEST #001</p>
+                                </li>
+                                <li class="info-item">
+                                    <span>Test Entity</span>
+                                    <p>STYGIOMEDUSA (DEEP-SEA JELLYFISH)</p>
+                                </li>
+                                <li class="info-item">
+                                    <span>Deform To</span>
+                                    <p>MUGLER - SPIRAL 01</p>
+                                </li>
+                            </ul>
+                            <div class="process">
+                                <img src="./assets/images/deform_1.webp" alt />
+                                <img src="./assets/images/deform_arrow.png" alt />
+                                <img src="./assets/images/deform_2.svg" alt />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <p class="text">
+                        기하학적이면서도 강렬한 에너지가 표현된 Spiral 01,<br />
+                        유기적인 라인 디테일과 크롬 로고 장식의 조화로 현대적인 무드가 돋보이는<br />
+                        Spiral 02로 구성된 컬렉션을 통해 두 브랜드의 정교함과 예술성이 반영된<br />아이웨어의 새로운
+                        기준을 제시합니다.
+                    </p>
+                    <div class="inner">
+                        <div class="group-video">
+                            <video
+                                loop
+                                autoplay
+                                muted
+                                playsline
+                                src="./assets/images/PC_SPIRAL_02_Video_1080x1350.mp4"
+                                poster="./assets/images/PC_SPIRAL_02_Video_1080x1350_cover.jpg"
+                            ></video>
+                        </div>
+                        <div class="group-contents">
+                            <img src="./assets/images/spiral_2.avif" alt class="spiral" />
+                            <p class="text">스파이럴 02로의 변형(變形)</p>
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <span>Case No.</span>
+                                    <p>DEFORMATION TEST #002</p>
+                                </li>
+                                <li class="info-item">
+                                    <span>Test Entity</span>
+                                    <p>MUGLER - SPIRAL 01</p>
+                                </li>
+                                <li class="info-item">
+                                    <span>Deform To</span>
+                                    <p>MUGLER - SPIRAL 02</p>
+                                </li>
+                            </ul>
+                            <div class="process">
+                                <img src="./assets/images/deform_2.svg" alt />
+                                <img src="./assets/images/deform_arrow.png" alt />
+                                <img src="./assets/images/deform_3.svg" alt />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="group-img">
+                        <img src="./assets/images/product_cut_4.avif" alt />
+                    </div>
+                    <div class="group-contents">
+                        <em class="title">Exclusive Package</em>
+                        <p class="desc">
+                            디자인의 영역을 확장시키는 두 브랜드의 혁신적인 비전이 반영된 아이웨어 패키지는 유기적이고
+                            구조적인 쉐잎으로 현대적이고 미래지향적인 감각을 전달하며 아이코닉한 비주얼 혁신가들에게
+                            경의를 표하는 의미를 담고 있습니다.
+                        </p>
+                        <ul class="prod-list">
+                            <li class="prod-item">
+                                <a href="#">스파이럴 01 M01</a>
+                            </li>
+                            <li class="prod-item">
+                                <a href="#">스파이럴 01 CS1</a>
+                            </li>
+                            <li class="prod-item">
+                                <a href="#">스파이럴 01 C1</a>
+                            </li>
+                            <li class="prod-item">
+                                <a href="#">스파이럴 02 M01</a>
+                            </li>
+                            <li class="prod-item">
+                                <a href="#">스파이럴 02 CS1</a>
+                            </li>
+                            <li class="prod-item">
+                                <a href="#">스파이럴 02 V2</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="link-common">shop the collection</a>
+                    </div>
+                </div>
+                <div class="gauge-wrap">
+                    <p class="text">
+                        GENTLE MONSTER X MUGLER<br />
+                        'HIGHLY VARIANT GENES'
+                    </p>
+                    <p id="coll-gauge">DEPTH GAUGE 2,562 PX</p>
+                    <div class="gauge" aria-hidden="true">
+                        <svg
+                            class="cir"
+                            width="2"
+                            height="2"
+                            viewBox="0 0 2 2"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle
+                                cx="1.25098"
+                                cy="0.815044"
+                                r="0.757098"
+                                transform="rotate(-135 1.25098 0.815044)"
+                                fill="white"
+                            ></circle>
+                        </svg>
+                        <div class="needle-wrap">
+                            <svg
+                                id="needle"
+                                width="10"
+                                height="112"
+                                viewBox="0 0 10 112"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6.96064 51.4506C6.59428 51.2723 6.41111 51.1832 6.32204 51.0948C6.22934 51.0029 6.18939 50.9406 6.14442 50.818C6.10121 50.7003 6.09754 50.5422 6.09019 50.2261L4.92465 0.0644628L3.57055 50.2745C3.56222 50.5833 3.55805 50.7377 3.51586 50.8535C3.47199 50.9738 3.43298 51.0354 3.34292 51.1265C3.2563 51.2141 3.0789 51.3038 2.72409 51.4834C1.17244 52.2685 0.107368 53.8765 0.103902 55.7346C0.0989868 58.3698 2.23126 60.51 4.86647 60.515C7.50168 60.5199 9.64192 58.3876 9.64684 55.7524C9.65037 53.8617 8.55379 52.2259 6.96064 51.4506ZM4.74943 52.304L4.90357 52.3043C6.7495 52.3487 8.23054 53.8607 8.22708 55.7166C8.22357 57.5982 6.69539 59.1206 4.81379 59.1171C2.9322 59.1136 1.4097 57.5854 1.41321 55.7038C1.41668 53.848 2.90335 52.3415 4.74943 52.304Z"
+                                    fill="white"
+                                ></path>
+                            </svg>
+                        </div>
+                        <span class="px">PX</span>
+                        <div class="mark-wrap">
+                            <div class="mark mark-12"></div>
+                            <div class="mark mark-3"></div>
+                            <div class="mark mark-5"></div>
+                            <div class="mark mark-7"></div>
+                            <div class="mark mark-9"></div>
+                        </div>
+                        <div class="spiral-wrap">
+                            <img src="./assets/images/gauge_spiral_01.webp" alt />
+                            <img src="./assets/images/gauge_spiral_02.svg" alt />
+                            <img src="./assets/images/gauge_spiral_03.svg" alt />
+                        </div>
+                        <img class="loop" src="./assets/images/water_loops_11_v2.webp" alt />
+                    </div>
+                </div>
+            </section>
+            <section class="sc-style">
+                <div class="inner">
+                    <div class="col-right">
+                        <div class="group-title">
+                            <h2 class="title">Our community</h2>
+                            <p class="desc">
+                                젠틀몬스터와 함께한 다양한 순간을 만나보세요.<br />
+                                인스타그램에 @gentlemonster을 태그하여 당신의 스타일을 공유해보세요.
+                            </p>
+                            <a href="#" class="link-common">see all post</a>
+                        </div>
+                        <div class="group-post">
+                            <div class="post">
+                                <a href="#">
+                                    <div class="img-area">
+                                        <img src="./assets/images/user_1.avif" alt />
+                                    </div>
+                                    <em class="user">@summerr</em>
+                                    <time datetime="2023-08-29" class="date">august 29, 2023</time>
+                                </a>
+                            </div>
+                            <div class="post">
+                                <a href="#">
+                                    <div class="img-area">
+                                        <img src="./assets/images/user_2.avif" alt />
+                                    </div>
+                                    <em class="user">@trofimovstr</em>
+                                    <time datetime="2023-07-27" class="date">july 27, 2023</time>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-left">
+                        <div class="post">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="./assets/images/user_3.avif" alt />
+                                </div>
+                                <em class="user">@itsena__</em>
+                                <time datetime="2023-09-01" class="date">september 1, 2023</time>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-questions">
+                <div class="inner">
+                    <div class="group-title">
+                        <h2 class="title">자주 묻는 질문</h2>
+                        <a href="#" class="link-common">Q&A 바로가기</a>
+                    </div>
+                    <div class="group-quest">
+                        <ul class="quest-list">
+                            <li class="quest-item">
+                                <button type="button">
+                                    <em class="quest">문의 / 배송 / 서비스</em>
+                                    <span class="more">
+                                        <span class="blind">질문 더보기</span>
+                                    </span>
+                                </button>
+                                <div class="answer">
+                                    <div class="answer-wrap">
+                                        <div class="answer-item">
+                                            <p class="title">문의</p>
+                                            <div class="text">
+                                                제품 사용 중 불편한 점이 있으시거나, 제품 관리 및 수리에 관하여 궁금한
+                                                점이 있으실 경우 언제든지 연락해 주시기 바랍니다. 수리 서비스(접수방법,
+                                                기간, 비용책정) 관련 자세한 내용은 수리서비스 가이드 를 참고해주세요.
+                                            </div>
+                                        </div>
+                                        <div class="answer-item">
+                                            <p class="title">배송</p>
+                                            <div class="text">
+                                                GENTLE MONSTER는 모든 국가로 배송할 수 있습니다. 국내 배송의 경우 평균
+                                                1–3일 정도 소요됩니다. 단, 지역 운송사 사정에 따라 다소 차이가 있을 수
+                                                있습니다.
+                                            </div>
+                                        </div>
+                                        <div class="answer-item">
+                                            <p class="title">서비스</p>
+                                            <div class="text">
+                                                젠틀몬스터의 선물하기 서비스로 특별한 순간을 기념하세요. 마음이 담긴
+                                                선물로 젠틀몬스터를 경험할 수 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="quest-item">
+                                <button type="button">
+                                    <em class="quest">매장 픽업 서비스</em>
+                                    <span class="more">
+                                        <span class="blind">질문 더보기</span>
+                                    </span>
+                                </button>
+                                <div class="answer">
+                                    <div class="answer-wrap">
+                                        <div class="answer-item">
+                                            <p class="title">매장 픽업 서비스 이용 방법</p>
+                                            <div class="text">
+                                                1. 픽업 신청: 구매하고자 하는 제품 매장 픽업 신청 <br />
+                                                2. 상품 준비 완료: 매장에서 픽업 신청 확인 후 상품 준비 완료<br />
+                                                3. 픽업 완료: 매장 방문 후 제품 픽업
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="quest-item">
+                                <button type="button">
+                                    <em class="quest">수리서비스 가이드</em>
+                                    <span class="more">
+                                        <span class="blind">질문 더보기</span>
+                                    </span>
+                                </button>
+                                <div class="answer">
+                                    <div class="answer-wrap">
+                                        <div class="answer-item">
+                                            <p class="title">수리 서비스 접수</p>
+                                            <div class="text">
+                                                <p>
+                                                    젠틀몬스터는 공식 온/오프라인 스토어 및 공식 거래처를 통해 구매한
+                                                    정품 상품에 한하여 전세계 어디서든 수리 서비스 접수가 가능합니다.
+                                                </p>
+                                                <p>
+                                                    온라인 홈페이지 접수 후 택배 발송을 통한 진행
+                                                    <a href="">(온라인 접수하기)</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <h2 class="blind">푸터</h2>
+            <div class="inner">
+                <div class="group-cs">
+                    <div class="content">
+                        <h3 class="title">고객 서비스</h3>
+                        <ul>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">배송</a></li>
+                            <li><a href="#">서비스</a></li>
+                            <li><a href="#">교환 및 반품</a></li>
+                            <li><a href="#">주문조회</a></li>
+                            <li><a href="#">주문취소</a></li>
+                            <li><a href="#">매장 픽업 서비스</a></li>
+                            <li><a href="#">수리서비스 가이드</a></li>
+                            <li><a href="#">제품 사용 가이드</a></li>
+                            <li><a href="#">정품 인증</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">법적 고지</h3>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#" class="bold">개인정보처리방침</a></li>
+                            <li><a href="#">쿠키 정책</a></li>
+                            <li><a href="#">기프트카드 이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">소셜 미디어</h3>
+                        <ul>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">카카오톡</a></li>
+                            <li><a href="#">핀터레스트</a></li>
+                            <li><a href="#">위챗</a></li>
+                            <li><a href="#">웨이보</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group-copy">
+                    <p class="copy">© 2024 GENTLE MONSTER</p>
+                    <small>
+                        <div class="corp">
+                            <span>주) 아이아이컴바인드</span>
+                            <span>대표자명: 김한국</span>
+                            <span>사업자번호: 119-86-38589</span>
+                            <span>통신판매신고번호: 제 2014-서울마포-1050 호 (사업자 정보 확인)</span>
+                            <address>
+                                이메일 문의: <a href="mailto:cs@gentlemonster.com">cs@gentlemonster.com</a>
+                            </address>
+                            <span>개인정보보호책임자: 정태호</span>
+                            <address>주소: 서울특별시 마포구 어울마당로5길 41</address>
+                            <address>대표번호: <a href="tel:0000-0000" class="tel">1600-2126</a></address>
+                        </div>
+                        <p>
+                            고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고
+                            있습니다. <a href="#">서비스 가입사실 확인</a>
+                        </p>
+                    </small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

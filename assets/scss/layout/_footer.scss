@@ -1,0 +1,81 @@
+#footer {
+    .inner {
+        padding: 56px 60px 32px;
+        background: #f7f7f7;
+    }
+    .group-cs {
+        display: flex;
+        font-size: 12px;
+        font-weight: 500;
+        .content {
+            width: 100%;
+            max-width: 300px;
+        }
+        .title {
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+        li {
+            color: #858585;
+            padding: 3px 0 4px;
+            a {
+                display: block;
+                padding: 0;
+            }
+            .bold {
+                color: #000;
+            }
+        }
+    }
+    .group-copy {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 75px;
+        .copy {
+            width: 250px;
+            font-family: "Pretendard", sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            vertical-align: top;
+            height: 35px;
+        }
+        small {
+            font-size: 11px;
+            .corp {
+                display: flex;
+                column-gap: 11px;
+                flex-wrap: wrap;
+                span,
+                address {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: -6px;
+                        width: 1px;
+                        height: 10px;
+                        background: #000;
+                        transform: translateY(-50%);
+                        word-break: keep-all;
+                    }
+                }
+                address:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                .tel {
+                    text-decoration: underline;
+                }
+            }
+            p {
+                margin-top: 2px;
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
